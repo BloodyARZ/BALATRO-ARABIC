@@ -1,6 +1,5 @@
 # BALATRO-ARABIC
 Arabic patch for BALATRO in windows.
-Patch
 
 هاذا تعريب تجريبي ولم تترجم كثري من النصوص. لم يتم التدقيق بشكل كبير. 
 
