@@ -19,12 +19,11 @@
   font-size: 12px; /* Adjust button text size */
     }
   .logo {
+    padding-top: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
-    width: 40%; /* Ensure the images take up the full width */
-    height: auto;
+    width: 80%; /* Ensure the images take up the full width */
   }
   .icon {
     display: block;

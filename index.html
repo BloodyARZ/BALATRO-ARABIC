@@ -41,16 +41,46 @@
                 <a href="#Patch" class="scroll-button">تحميل</a>
             </div>
 
-            <img src="logo/Logo.png" class="logo">
-
+            <div class="intro">
+                <img src="logo/logo.png" class="logo">
+                <div id="Bio">
             <h1 class="center_text">بالاترو</h1>
+            <br>
+            <br>
+            <br>
+
+            </head>
+            <body>
+              <div class="image-launch" id="imageLaunch"></div>
+
+              <script>
+                const container = document.getElementById('imageLaunch');
+                for (let i = 1; i <= 10; i++) {
+                  const img = document.createElement('img');
+                  img.src = `cards/effect/img${i}.webp`;
+                  img.className = 'launch-img';
+                  img.alt = '';
+                  
+                  // Randomize animation delay and starting position
+                  const randomDelay = Math.random() * 2 + 's'; // Random delay between 0-2 seconds
+                  const randomLeft = Math.random() * 100 + 'vw'; // Random horizontal position (0-100vw)
+                  
+                  img.style.animationDelay = randomDelay;
+                  img.style.left = randomLeft;
+              
+                  container.appendChild(img);
+                }
+              </script>
+              
+            </body>
+            </html>
         </head>
     <body>
 
     <p class="center_text">بالاترو هو لعبة بناء أوراق مستوحاة من البوكر، تدور حول إنشاء التآزر القوي والفوز الكبير. قم بدمج الأيدي الصحيحة في البوكر مع بطاقات الجوكر الفريدة لإنشاء تآزرات وبناءات متنوعة. احصل على ما يكفي من الرقائق لتخطي العوائق الصعبة، بينما تكشف عن الأيدي المخفية واليدوات وأوراق اللعب أثناء تقدمك. ستحتاج إلى كل ميزة يمكن أن تحصل عليها للوصول إلى العائق النهائي، وتجاوز الرهان الأخير، وتأمين النصر. نشر أدوات قوية: أوراق اللعب المختلفة، الجوكر، بطاقات التاروت، بطاقات الكواكب، البطاقات الطيفية، والقسائم. استخدم هذه الأدوات المتعددة لإشعال فوضى التراكمات وتسريع يدك في البوكر، مما يخلق تآزرات كهربائية مشوقة.</p>
 
     <hr>
-    
+
     <ul>
         <li>150 جوكر، كل واحد منهم لديه قدرات فريدة</li>
         <li>15 مجموعة أوراق مع تعديلات مميزة للاختيار منها في كل جولة</li>
@@ -61,17 +91,9 @@
         <li>4 أختام</li>
         <li>32 بطاقة قسيمة تساعد في توفير تعزيزات دائمة لجولتك الحالية</li>
     </ul>
-    
+</div>
                 
             <ul class="center_text">
-              <div class="image-container-wrapper">
-                <div class="image-container">
-                    <button id="B_icon1" class="image-button" onclick="toggleImage(1)">
-                        <img class="Card" src="cards/cover.webp" id="button-image1">
-                    </button>
-                    <div class="image-text" id="text1">?????</div>
-                </div>
-              </div>
             <div id="Buy">
                 <h2>Section 2</h2>
                 <p>This is Section 2.</p>
@@ -97,8 +119,7 @@
                 <audio id="audioPlayer" src="sound/music.ogg" preload="auto" loop></audio>
 
     <script src="script/shake&change.js"></script>
-    <script src="script/scroller.js"></script>
     <script src="script/audio.js"></script>
-    <script src="script/vtt.js"></script>
+    <script src="script/cards.js"></script>
 </body>
 </html>
