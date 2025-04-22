@@ -1,0 +1,73 @@
+.Card{
+    width: auto;
+    height: auto;
+    
+}
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.image-container-wrapper {
+    display: flex; /* Use flexbox to arrange the buttons in a row */
+    flex-wrap: wrap; /* Allow the buttons to wrap onto the next row */
+    justify-content: space-between; /* Distribute space evenly between buttons */
+    gap: 20px; /* Adds equal space between the buttons */
+    padding: 10px; /* Optional padding around the container */
+}
+
+/* Container for each individual image button */
+.image-container {
+    text-align: center; /* Center the text below each button */
+    flex-basis: calc(15% - 15px); /* Ensure each button takes up 20% of the width, with space for the gap */
+}
+button {
+    width: 220px;
+    height: 124px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: transparent;
+    padding: 10;
+    border-radius: 1000px;
+    cursor: pointer;
+    /*transition: background 0.3s ease, box-shadow 0.3s ease;*/
+}
+
+/* Change image and add shadow on hover */
+button:hover {
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+}
+
+/* Focus effect for keyboard navigation */
+button:focus {
+    outline: none;
+    border: 2px solid transparent;
+}
+
+/* Style for the image button */
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+/* Style for the text below each image */
+.image-text {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+/* Container for each image button */
+.image-container {
+    display: inline-block; /* Ensures the buttons align next to each other */
+    margin: 10px; /* Adds space between each button (you can adjust the value) */
+    text-align: center; /* Centers the text below each button */
+}

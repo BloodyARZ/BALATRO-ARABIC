@@ -1,18 +1,11 @@
 <!DOCTYPE html>
     <html dir="rtl" lang="ar">
-        <head class="canvas">
-            <a href="#Bio" class="scroll-button" >Bio</a>
-            <a href="#Buy" class="scroll-button" >Buy</a>
-            <a href="#Patch" class="scroll-button" >Patch</a>
+        <head>
+            
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>بالاترو</title>
-            <link rel="stylesheet" href="style.css">
-            <link rel="stylesheet" href="style/phone.css">
-            <link rel="stylesheet" href="style/scroller.css">
-            <link rel="stylesheet" href="style/card.css">
-            <link rel="stylesheet" href="style/shake.css">
-            <link rel="stylesheet" href="style/background.css">
+
             <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
             <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
             <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
@@ -33,40 +26,52 @@
             <meta name="msapplication-square150x150logo" content="favicomatic/mstile-150x150.png" />
             <meta name="msapplication-wide310x150logo" content="favicomatic/mstile-310x150.png" />
             <meta name="msapplication-square310x310logo" content="favicomatic/mstile-310x310.png" />
+                       
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="style/phone.css">
+            <link rel="stylesheet" href="style/scroller.css">
+            <link rel="stylesheet" href="style/card.css">
+            <link rel="stylesheet" href="style/shake.css">
+
+            <div id="top"></div>
+            <div class="top-bar">
+                <a href="javascript:void(0);" class="scroll-button" id="musicToggle">موسيقى</a>
+                <a href="#Bio" class="scroll-button">معلومات</a>
+                <a href="#Buy" class="scroll-button">شراء</a>
+                <a href="#Patch" class="scroll-button">تحميل</a>
+            </div>
+
+            <img src="logo/logo.png" class="logo">
+
+            <h1 class="center_text">بالاترو</h1>
         </head>
     <body>
-    <img class="logo" src="logo/logo.png"> 
-    <div id="Bio">
-        <h1 class="center_text">بالاترو</h1>
-        <p class="center_text">Balatro is a poker-inspired roguelike deck builder all about
-            creating powerful and winning big.<br> 
-            <br> 
-            Combine valid poker hands with unique Joker cards in order to create varied
-            synergies and builds. Earn enough chips to beat devious blinds, all while
-            uncovering hidden bonus hands and decks as you progress. You’re going to
-            need every edge you can get in order to reach the boss blind, beat the final
-            ante and secure victory.<br> 
-            <br> 
-            Deftly deploy an array of potent tools: different Decks, Jokers, T arot cards,
-            Planet cards, Spectral cards, and Vouchers. Use these versatile instruments
-            to ignite a combo frenzy and turbocharge your poker hands, crafting
-            electrifying, adrenaline-fueled synergies.<br></p>
-        <br>   <hr>   <br> 
-        <br>
-        <li>150 Jokers, each with their own unique abilities</li>
-        <li>15 Decks with distinct modifiers to choose from for each run</li>
-        <li>5 potential variants of each Joker which add further abilities</li>
-        <li>22 T arot cards variants that can enhance your regular playing cards</li>
-        <li>12 Planet cards that help level up your possible poker hands</li>
-        <li>18 Spectral card</li>
-        <li>4 Seals</li>
-        <li>32 Voucher cards to help provide permanent buffs for your current run</li></ul>
-    </div>
-        
-            <div style="height: 250px;"></div> <!-- Just to add some scroll space -->
-        
-            <div style="height: 250px;"></div> <!-- Space between sections -->
-        
+
+    <p class="center_text">بالاترو هو لعبة بناء أوراق مستوحاة من البوكر، تدور حول إنشاء التآزر القوي والفوز الكبير. قم بدمج الأيدي الصحيحة في البوكر مع بطاقات الجوكر الفريدة لإنشاء تآزرات وبناءات متنوعة. احصل على ما يكفي من الرقائق لتخطي العوائق الصعبة، بينما تكشف عن الأيدي المخفية واليدوات وأوراق اللعب أثناء تقدمك. ستحتاج إلى كل ميزة يمكن أن تحصل عليها للوصول إلى العائق النهائي، وتجاوز الرهان الأخير، وتأمين النصر. نشر أدوات قوية: أوراق اللعب المختلفة، الجوكر، بطاقات التاروت، بطاقات الكواكب، البطاقات الطيفية، والقسائم. استخدم هذه الأدوات المتعددة لإشعال فوضى التراكمات وتسريع يدك في البوكر، مما يخلق تآزرات كهربائية مشوقة.</p>
+
+    <hr>
+    
+    <ul>
+        <li>150 جوكر، كل واحد منهم لديه قدرات فريدة</li>
+        <li>15 مجموعة أوراق مع تعديلات مميزة للاختيار منها في كل جولة</li>
+        <li>5 احتمالات مختلفة لكل جوكر، تضيف قدرات إضافية</li>
+        <li>22 بطاقة تاروت يمكنها تعزيز أوراقك العادية</li>
+        <li>12 بطاقة كوكب تساعد في تعزيز يد البوكر الممكنة</li>
+        <li>18 بطاقة طيفية</li>
+        <li>4 أختام</li>
+        <li>32 بطاقة قسيمة تساعد في توفير تعزيزات دائمة لجولتك الحالية</li>
+    </ul>
+    
+                
+            <ul class="center_text">
+              <div class="image-container-wrapper">
+                <div class="image-container">
+                    <button id="B_icon1" class="image-button" onclick="toggleImage(1)">
+                        <img class="Card" src="cards/cover.webp" id="button-image1">
+                    </button>
+                    <div class="image-text" id="text1">?????</div>
+                </div>
+              </div>
             <div id="Buy">
                 <h2>Section 2</h2>
                 <p>This is Section 2.</p>
@@ -76,14 +81,24 @@
         
             <div id="Patch">
                 <h2>Section 3</h2>
-                <p>This is Section 3.</p>
-            </div>
-        
-            <a href="patch.zip" download>Download File</a>
+                <a href="file.zip" download>Download File</a>
+                <a href="https://store.steampowered.com/app/2379780/Balatro/">Buy Balatro on Steam</a>
+            </div>           
+            <a href="#top" class="scroll-button" >العودة الى فوق</a>
             <img src="logo/Publisher_Playstack_logo.png" class="icon">
+            <h1 class="center_text">About Playstack</h1>
+            <p class="center_text">Playstack is dedicated to fostering the next wave of game development talent,<br>
+                supporting developers in creating innovative and captivating games. With a<br>
+                commitment to collaboration with creative teams, Playstack has become a key<br>
+                player in the gaming industry, recognized for its diverse game portfolio and<br>
+                effective marketing and publishing strategies. Learn more about their<br>
+                pioneering efforts at www.Playstack.com.</p>
+
+                <audio id="audioPlayer" src="sound/music.ogg" preload="auto" loop></audio>
+
     <script src="script/shake&change.js"></script>
-    <script src="script/background.js"></script>
     <script src="script/scroller.js"></script>
     <script src="script/audio.js"></script>
+    <script src="script/vtt.js"></script>
 </body>
 </html>
