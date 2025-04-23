@@ -1,6 +1,16 @@
 const musicToggle = document.getElementById('musicToggle');
 const audioPlayer = document.getElementById('audioPlayer');
 
+// Play music by default when the page loads
+window.addEventListener('load', function () {
+    audioPlayer.play().then(() => {
+        musicToggle.textContent = 'إيقاف';
+    }).catch(error => {
+        console.error('Audio play error:', error);
+    });
+});
+
+// Handle music toggle button click
 musicToggle.addEventListener('click', function () {
     if (audioPlayer.paused) {
         musicToggle.textContent = 'تشغيل...';

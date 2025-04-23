@@ -77,3 +77,16 @@ function toggleImage(buttonId) {
         button.disabled = false;  // Re-enable button
     });
 }
+
+const wrapper = document.getElementById('image-wrapper');
+            
+for (let i = 1; i <= 10; i++) {
+  wrapper.innerHTML += `
+    <div class="image-container">
+      <button id="B_icon${i}" class="image-button" onclick="toggleImage(${i})">
+        <img class="Card" src="cards/cover.webp" id="button-image${i}">
+      </button>
+      <div class="image-text" id="text${i}">?????</div>
+    </div>
+  `;
+}

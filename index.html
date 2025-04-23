@@ -1,11 +1,9 @@
 <!DOCTYPE html>
     <html dir="rtl" lang="ar">
         <head>
-            
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>بالاترو</title>
-
             <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
             <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
             <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
@@ -25,14 +23,12 @@
             <meta name="msapplication-square70x70logo" content="favicomatic/mstile-70x70.png" />
             <meta name="msapplication-square150x150logo" content="favicomatic/mstile-150x150.png" />
             <meta name="msapplication-wide310x150logo" content="favicomatic/mstile-310x150.png" />
-            <meta name="msapplication-square310x310logo" content="favicomatic/mstile-310x310.png" />
-                       
+            <meta name="msapplication-square310x310logo" content="favicomatic/mstile-310x310.png" />    
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="style/phone.css">
             <link rel="stylesheet" href="style/scroller.css">
             <link rel="stylesheet" href="style/card.css">
             <link rel="stylesheet" href="style/shake.css">
-
             <div id="top"></div>
             <div class="top-bar">
                 <a href="javascript:void(0);" class="scroll-button" id="musicToggle">موسيقى</a>
@@ -40,38 +36,17 @@
                 <a href="#Buy" class="scroll-button">شراء</a>
                 <a href="#Patch" class="scroll-button">تحميل</a>
             </div>
-
+<div class="SScreen">hii</div>
             <div class="intro">
                 <img src="logo/Logo.png" class="logo">
                 <div id="Bio">
             <h1 class="center_text">بالاترو</h1>
-            <br>
-            <br>
-            <br>
+            <div class="image-container-wrapper" id="image-wrapper"></div>
+            <button id="launchBtn">Launch Cards!</button>
+            <div id="imageLaunch"></div>
 
             </head>
             <body>
-              <div class="image-launch" id="imageLaunch"></div>
-
-              <script>
-                const container = document.getElementById('imageLaunch');
-                for (let i = 1; i <= 10; i++) {
-                  const img = document.createElement('img');
-                  img.src = `cards/effect/img${i}.webp`;
-                  img.className = 'launch-img';
-                  img.alt = '';
-                  
-                  // Randomize animation delay and starting position
-                  const randomDelay = Math.random() * 2 + 's'; // Random delay between 0-2 seconds
-                  const randomLeft = Math.random() * 100 + 'vw'; // Random horizontal position (0-100vw)
-                  
-                  img.style.animationDelay = randomDelay;
-                  img.style.left = randomLeft;
-              
-                  container.appendChild(img);
-                }
-              </script>
-              
             </body>
             </html>
         </head>
@@ -96,10 +71,9 @@
             <ul class="center_text">
             <div id="Buy">
                 <h2>Section 2</h2>
-                <p>This is Section 2.</p>
             </div>
         
-            <div style="height: 250px;"></div> <!-- Space between sections -->
+            <div style="height: 250px;"></div>
         
             <div id="Patch">
                 <h2>Section 3</h2>
@@ -117,7 +91,7 @@
                 pioneering efforts at www.Playstack.com.</p>
 
                 <audio id="audioPlayer" src="sound/music.ogg" preload="auto" loop></audio>
-
+                <audio id="launchSound" src="sound/card_shuffling.mp3" preload="auto"></audio>
     <script src="script/shake&change.js"></script>
     <script src="script/audio.js"></script>
     <script src="script/cards.js"></script>
